@@ -1,0 +1,78 @@
+﻿/* PaymentTrust_09.00.00, PaymentTrust_09.00.01 */
+
+
+/* Buttons */
+
+.button         { display: inline-block; background-color: White; border: 1px solid #ccc; padding: 5px 12px; margin: 1px 1px; font-family: Arial, Sans-serif; font-size: 11px; font-weight: bold; text-align: center; color: #666; text-decoration: none; min-width: 90px; cursor: pointer; 
+                  -moz-box-shadow: 0 1px 1px 0 #ccc; -webkit-box-shadow: 0 1px 1px 0 #ccc;  box-shadow: 0 1px 1px 0 #ccc; zoom: 1; * display: inline;-webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;}
+.button:hover   { color: #333; text-decoration: none !important; }
+.btnAdd         { background: url('../Images/bt_arrowright.png') no-repeat; width: 40px; height: 40px; border: none; cursor: pointer; }
+.btnMove        { background: url('../Images/bt_arrowleft.png') no-repeat; width: 40px; height: 40px; border: none; cursor: pointer; }
+.btnUp          { background: url('../Images/bt_arrowup.png') no-repeat; width: 40px; height: 40px; border: none; cursor: pointer; }
+.btnDown        { background: url('../Images/bt_arrowdown.png') no-repeat; width: 40px; height: 40px; border: none; cursor: pointer; }
+.btnAdd, 
+.btnMove, 
+.btnUp, 
+.btnDown        { outline: none; }
+.btnAdd:hover, 
+.btnMove:hover, 
+.btnUp:hover, 
+.btnDown:hover  { background-position: 0 -40px; }
+
+.btnAddFilter {
+    border:none;
+    height: 25px;
+    background: Transparent url(../Images/bt_add.png) no-repeat;
+    cursor: pointer;
+    display: block;
+    padding-left: 30px;
+    color: #007867;
+    padding-top: 6px;
+    font-size: 0.9em;
+    text-decoration:none
+}
+
+.btnAddFilter:hover,  .btnAddChart:hover
+                { background-position: 0 -30px; text-decoration:underline;}
+.btnRemoveFilter, .btnRemoveChart  
+                { width: 30px; height: 30px; background: url(../Images/bt_remove.png) no-repeat; cursor: pointer; display: block; }
+.btnRemoveFilter:hover, .btnRemoveChart:hover  
+                { background-position: 0 -30px; }
+
+.btnEdit       { border:none; width: 30px; height: 30px; background: Transparent url(../Images/bt_edit.png) no-repeat; cursor: pointer; display: inline-block; color: #007867;}
+.btnEdit:hover { background-position: 0 -30px; text-decoration:underline;}
+
+.btnUse        { border:none; width: 30px; height: 30px; background: Transparent url(../Images/bt_use.png) no-repeat; cursor: pointer; display: inline-block; color: #007867;}
+.btnUse:hover  { background-position: 0 -30px; text-decoration:underline;}
+
+.CustomPopUpCloseButton 
+                { background: transparent url('../Images/close.png') no-repeat; border-style: none; width: 16px; height: 16px; cursor: pointer; }
+.popupClose     { background: transparent url('../Images/close.png') no-repeat; border-style: none; width: 15px; height: 15px; cursor: pointer; }
+.popupCloseButton   
+                { float: right; padding: 4px 2px 4px 2px; width: 15px; }
+.actionBtn      { cursor: pointer; }
+.emerald       { background:#007867; color:White; border: none; padding: 7px 12px;-webkit-border-radius: 14px; -moz-border-radius: 14px; border-radius: 14px;}
+
+.emerald:hover { background: #1a8676; color:White; }
+
+
+/* Miscellaneous */
+
+.resultCount        { font-size: 0.8em; font-weight: bold; float: left; }
+.wait               { width: 400px; height: 80px; background-color: white; font-weight: bold; color: #191970; vertical-align: middle; margin-top: 20px; }
+.highlightCss       { background-color: #fffacd; }
+.hideOverflow       { white-space: nowrap; overflow: hidden; width: 200px; text-overflow: ellipsis; }
+.waterMarkFilter    { color: #ccc !important; }
+input[type=text].calendar         { background: White url('../Images/calendar.png') no-repeat 97%;}
+.infoLink { text-decoration: underline; cursor: help; font-size: 0.85em;}
+.required { color: #F01E14;}
+
+
+.loadingResults, .loadingPopup {padding: 60px 0; text-align: center; display:none;}
+.responseCode { position: relative;}
+.inlineHelpText { display:block; background: White; padding: 5px; margin-top: -3px; color: #393939; font-size: 0.9em; border: 1px solid #ccc; position: absolute; right: 130%; top: 0; min-width: 90px; text-align:center;}
+.inlineHelpText img {float:right; margin-right: -13px;}
+.resultsCount { font-size: 0.8em; color: #5a5a5a; line-height: 2em;}
+
+
+.errorMsg { font-weight: bold }

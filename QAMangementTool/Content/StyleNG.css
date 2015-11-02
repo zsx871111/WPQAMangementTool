@@ -1,0 +1,213 @@
+﻿/* PaymentTrust_09.00.00 */
+
+/* Logo Red:  #f01e14 */
+/* Logo Grey: #919191 */
+/* Emerald:   #007867 */
+/* Gun Metal: #393939 */
+
+html            { overflow: scroll; height: 100%; }
+body            { padding: 0; font-family: Calibri, Arial, "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", Sans-Serif; font-size: 18px; color: #393939; }
+h1, h2, h3, h4  { font-weight: normal; margin: 0; padding: 0; }
+h2              { color: #f01e14; margin-bottom: 20px;}
+h3              { color: #919191; }
+h4              { color: #f01e14; }
+a               { color: #007867; cursor: pointer;}
+a, input        { outline: none; }
+input:invalid, select:invalid   { -moz-box-shadow: none; box-shadow: none;} /* Removes ugly red glow on FF required fields*/
+a img           { border: none; }
+p               { line-height: 1.3em;}
+.Cssbutton { display: inline-block; background-color: White; border: 1px solid #ccc; padding: 5px 12px; margin: 1px 1px; font-family: Arial, Sans-serif; font-size: 11px; font-weight: bold; text-align: center; color: #666; text-decoration: none; min-width: 90px; cursor: pointer; 
+                  -moz-box-shadow: 0 1px 1px 0 #ccc; -webkit-box-shadow: 0 1px 1px 0 #ccc;  box-shadow: 0 1px 1px 0 #ccc; zoom: 1; * display: inline;-webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px;}
+
+input[type=text], 
+input[type=password],
+input[type=file],  
+textarea, select    { padding: 5px; font-size: 0.9em; color: #393939; border: 1px solid #ccc;font-family: Calibri, Arial, Sans-Serif;}
+select              { min-width: 60px;}
+option              {  color: #393939; }
+optgroup            { color: #007867; font-style: normal; font-weight: normal; }
+
+
+
+/* Main Sections */
+
+#container      { width: 100%; max-width: 1140px; margin: auto; min-height: 900px; padding-top: 1px; }
+#header         { height: 34px; padding: 10px 0; position: relative; }
+#content        { padding: 65px 30px 30px 30px; min-height: 640px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; border: 1px solid #ccc;box-shadow: 0 1px 4px 1px #ccc; -moz-box-shadow: 0 1px 4px 1px #ccc;    -webkit-box-shadow: 0 1px 4px 1px #ccc;
+          }
+#footer         { color: #393939; font-size: 0.8em; clear: both; }
+.loxodrome      { width: 576px; height: 342px; position: fixed; bottom: 0; right: 0; z-index: -1000000; }
+.merchantID     { text-align: right; position: absolute; top: 5px; right: 2px; color: #393939; font-size: 0.9em; }
+.merchantUISettings    { text-align: right; position: absolute; top: 22px; right: 2px; color: #393939; font-size: 0.7em; }
+.merchantUISettings a {padding: 7px 4px; display: inline-block;}
+.LangDropDown, .TimeZoneDropDown       { padding: 0; font-size: 1em;}
+.timePart       { font-size: 0.7em; color:#919191; }
+.currency       { font-size: 0.7em; color:#919191; }
+
+/* Language and Time zone*/
+
+.merchantUIPopup { padding:10px; background:White;-moz-box-shadow: 0 0 2px 2px #ccc; -webkit-box-shadow: 0 0 2px 2px #ccc;  box-shadow: 0 0 2px 2px #ccc; position:relative;text-align:center; width:180px; border: 1px solid #ccc;}
+.merchantUIPopup ul, .merchantUIPopup li { padding: 5px 0; margin: 0; list-style:none; font-size: 0.9em; }
+.merchantUIPopup a { text-decoration:none; color:#393939;}
+.merchantUIPopup a:hover { color:#007867;}
+.merchantUIUpArrow { background: Transparent url(../Images/arrow_up.png) no-repeat; width: 29px; height: 19px; position:absolute; top: -19px; right: 10px;}
+.merchantUIPopup .aspNetDisabled, .merchantUIPopup a:hover {color: #007867;}
+
+
+/* Navigation */
+
+#nav                { background: #f01e14; width: 100%; position: absolute; top: 54px; left: 0; font-size: 0.85em; overflow: visible; height: 50px; line-height:1.4em;}
+#nav ul             { margin: 0; padding: 2px; list-style: none; }
+#nav li             { padding: 0; float: left;   }
+#nav ul.navRight    { float: left; }
+#nav ul.navRight    { float: right; }
+#nav a              { display: block; padding: 10px 15px; text-align:center; color: white; text-decoration: none; outline: none; * position: relative;  }
+#nav img            { display: block;  left: 50%;  padding-top: 3px; margin: auto; border: none;* display: inline;* position: absolute; }
+#nav .navLeft a  {border-right: 1px solid #ed8383; margin-top: 4px;}
+#nav .navRight a {border-left: 1px solid #ed8383;}
+
+/* Help/Info Section */
+.helpSection          { width: 310px; vertical-align: top;  overflow: auto; padding: 5px 0 5px 20px; margin-left: 20px;text-align:left; 
+                        font-size:0.8em;border-left: 1px solid #aaaaaa; display:inline-block; }
+
+/* Charts */
+.charts             { width: 720px;  display:inline-block; font-size: 0.85em; vertical-align:top;}
+.chartsBar          { background: #e7e7e7; padding: 5px; }
+.chartsBar table    { width: 100%; }
+.chartsBar span     { font-size: 0.8em; color: #666; }
+.chartsBar select   { width: 100%; }
+.chartArea          { height:320px; }
+.lastLogin          { margin: 80px 0 20px 0; }
+
+/* Search */
+.search     {width: 100%;  display:inline-block; vertical-align:top;}
+table.searchTransaction select { width: 100%; line-height: 22px;}
+table.searchTransaction input[type=text] { width: 93%; }
+table.searchDetails { width: 100%; }
+table.searchDetails td { padding: 3px; font-size: 0.8em; }
+table.searchDetails td:first-child { width: 40%;}
+table.searchDetails td:last-child { background: #e7e7e7;}
+.iconDM, .iconRecon, .iconFR, .iconCB {display:inline-block; width: 25px; height:25px; padding: 0; text-align:center; font-size: 0.8em; border: none; cursor: pointer; font-family: Calibri, Arial, Sans-Serif;}
+.iconDM { background: #b41437; color:White; }
+.iconRecon{ background: #ffb900; color:#393939; }
+.iconFR{ background: #69197d; color:White; }
+.iconCB{ background: #ff2e3a; color:White; }
+.extArrow { content: ""; width: 0; border-top: 8px solid Black; border-left: 8px solid transparent; border-right: 8px solid transparent; margin: auto;display:none;}
+.tableDM th { border-bottom-color: #b41437;}
+.tableRecon th { border-bottom-color: #ffb900;}
+.tableFR th { border-bottom-color: #69197d;}
+.tableCB th { border-bottom-color: #ff2e3a;}
+    
+
+/* E-Terminal */
+.subNav                 { width: 17.5%; display:inline-block; vertical-align:top; padding-right: 0.5%; font-size: 0.9em; }
+.subNav ul, .subNav li  { list-style:none; padding:0; margin:0;}
+.subNav a               { text-decoration:none; display:block; padding: 0 0 10px 15px;}
+.subNav a:hover, div.subNav a.selected { background: url(../Images/arrow_subnav.jpg) no-repeat 0 2px; }
+.eTerminalPage          { width: 100%;  display:inline-block;vertical-align:top; }
+.eTerminal              { width: 100%; background: #e7e7e7; display:inline-block; padding: 15px;}
+
+
+.subNav .disabled       {color:#ccc; cursor:default;}
+.subNav .disabled:hover {background:none;} 
+.subMerchantDropDown      { width: 95%; margin-bottom: 15px;}
+.eTerminal>table        { width: 100%; float:left;}
+.eTerminal>table:first-child { width: 47%; float:left; margin-right: 3%; }
+.eTerminal>table>tbody>tr>td:first-child { cursor: help; width: 44%;}
+.eTerminal>table:nth-child(3) { width: 48.5%; border-top: 1px solid #D1D1D1; padding-top: 10px; margin-top: 10px;}
+.eTerminal>table:nth-child(3)>tbody>tr>td:first-child { width: 60%;}
+.eTerminal select       {width: 100%;}
+.eTerminal input[type=text] { width: 94%;}
+
+
+
+/* Gridviews */
+
+.gridview                        { width: 100%; clear: both; font-size: 0.9em;}
+.gridview th, .gridview td       { padding: 5px; }
+.gridview th                     { color: #393939; font-weight: normal; text-align: left; border-bottom: 1px solid #f01e14; font-size: 1em; }
+.gridview th a                   { color: #007867; text-decoration: none; }
+.gridview td                     { font-size: 0.9em; cursor: pointer; }
+.gridview tr:nth-child(even)     { background: #ffffff; }
+.gridview tr:nth-child(odd)      { background: #eee; }
+.gridview tr:hover               { background: #ddd; }
+.gridview tr:first-child         { background: #ffffff; }
+.gridview tr:first-child:hover   { background: #ffffff; }
+.gridview tr:last-child td       { border-bottom: 1px solid #f01e14; }
+.gridview tr.gridviewPager       { background: White !important; }
+.gridview tr.gridviewPager td    { border: none; border-top: 1px solid #f01e14; }
+.gridview tr.gridviewPager table td      { border: 1px solid #ddd !important; padding: 5px 7px; color: #f01e14; }
+.gridview tr.gridviewPager table td span { color: #333; cursor: default; }
+.gridview tr.gridviewPager a             { text-decoration: none; color: #007867; font-weight:bold;}
+.gridview tr.gridviewPager a:hover       { text-decoration: underline; }
+.actionButtons div              { display: inline; }
+
+/* Search Details Related */
+
+.related                        { width: 100%; clear: both; font-size: 0.8em; }
+.related th, .related td        { padding: 5px; border-bottom: 1px solid #ccc; background: White;}
+.related th                     { color: #393939; font-weight: normal; text-align: left; border-bottom: 1px solid #f01e14; font-size: 1em; }
+.related .related               { font-size: 1em;}
+.related ul, .related li        { list-style: none; padding: 0; margin: 0; display:inline-block; text-align:center;}
+.related li:first-child         { width: 20px;}
+.related td a:hover                { text-decoration: none;}
+.related input[type=text]       { width: 90%;}
+
+/* Sort Arrows */
+
+th.sortedAsc a, th.sortedDesc a     { display: block; float: left; }
+th.sortedAsc div.arrowImage        { display: block; float: left; width: 15px; height: 10px; margin: 10px 0 0 5px; background: url(../Images/arrow_sort.png) no-repeat 0 0; }
+th.sortedDesc div.arrowImage       { display: block; float: left; width: 15px; height: 10px; margin: 10px 0 0 5px; background: url(../Images/arrow_sort.png) no-repeat 0 -10px; }
+
+
+/* Contact us */
+
+.contactinfo                { padding-left: 25px; padding-top: 15px; font-size: 0.9em; }
+
+/* Support */
+            
+.supportResult   { width: 867px;  display:inline-block; font-size: 0.85em; vertical-align:top; }            
+.supportTable    { margin-top:2px; border-top: 1px solid #F01E14; border-bottom: 1px solid #F01E14; width:100%;}
+.supportTable td { padding: 5px; vertical-align:top; border-bottom: 1px solid #e7e7e7; }
+.supportTable td:first-child {width: 187px; }
+.supportTable td:nth-child(3) {display: none;}
+.supportTable td:nth-child(4) {display: none;}
+.searchHighlightY {background-color: #ffdc7e; }
+.hideRow, .hideCell {display: none; }
+.rowGray  {background-color: #e7e7e7;}
+.searchTextBox { width: 150px; padding-right:30px !important; background: url(../Images/icon_search.png) no-repeat 160px 6px; margin-bottom: 10px;}
+
+            
+/* Popup */
+
+.searchModalBackground      { background-color: gray; filter: alpha(opacity=70); opacity: 0.7; }
+.searchModalPopup           { width: 1024px; background-color: white; border: none; padding: 0; }
+.searchModalPopup a         { text-decoration: none; }
+.searchModalPopup a:hover   { text-decoration: underline; }
+.searchModalPopup .gridview th, 
+.searchModalPopup .gridview td   { white-space: nowrap; }
+.popupCaption               { position: relative; top: -3px; height: 24px; padding: 5px 8px; color: white; cursor: default; background: #f01e14; }
+.captionText                { float: left; color: White; font-size: 1em; text-align: left; }
+.divPanel                   { padding: 10px; }
+.tabPanel                   { text-align: left; }
+.ModalPopupConfirmation     { background-color: white; z-index: 100; }
+span.required, 
+span.companyLabel           { display:none;}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+            

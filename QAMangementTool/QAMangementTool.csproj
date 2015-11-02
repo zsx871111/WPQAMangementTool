@@ -117,7 +117,70 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="Content\image\Analyse.jpg" />
+    <Content Include="Content\image\arrow_emerald.png" />
+    <Content Include="Content\image\arrow_nav.png" />
+    <Content Include="Content\image\arrow_right.jpg" />
+    <Content Include="Content\image\arrow_right.png" />
+    <Content Include="Content\image\arrow_sort.png" />
+    <Content Include="Content\image\arrow_stop.jpg" />
+    <Content Include="Content\image\arrow_subnav.jpg" />
+    <Content Include="Content\image\arrow_up.png" />
+    <Content Include="Content\image\bg_tabs.gif" />
+    <Content Include="Content\image\bt_add.png" />
+    <Content Include="Content\image\bt_arrowdown.png" />
+    <Content Include="Content\image\bt_arrowleft.png" />
+    <Content Include="Content\image\bt_arrowright.png" />
+    <Content Include="Content\image\bt_arrowup.png" />
+    <Content Include="Content\image\bt_edit.png" />
+    <Content Include="Content\image\bt_remove.png" />
+    <Content Include="Content\image\bt_use.png" />
+    <Content Include="Content\image\bug.png" />
+    <Content Include="Content\image\calendar.png" />
+    <Content Include="Content\image\check.png" />
+    <Content Include="Content\image\close.png" />
+    <Content Include="Content\image\disk.png" />
+    <Content Include="Content\image\download.jpg" />
+    <Content Include="Content\image\export.png" />
+    <Content Include="Content\image\folder_page.png" />
+    <Content Include="Content\image\home.jpg" />
+    <Content Include="Content\image\icon_search.png" />
+    <Content Include="Content\image\images.jpg" />
+    <Content Include="Content\image\lightning.png" />
+    <Content Include="Content\image\loxodrome.jpg" />
+    <Content Include="Content\image\lox_large.jpg" />
+    <Content Include="Content\image\lox_med.jpg" />
+    <Content Include="Content\image\NotPass.jpg" />
+    <Content Include="Content\image\Pass.png" />
+    <Content Include="Content\image\progresswait.gif" />
+    <Content Include="Content\image\Upload.png" />
+    <Content Include="Content\image\warning.gif" />
+    <Content Include="Content\image\wp_logo.png" />
+    <Content Include="Content\image\wp_logo_136.png" />
+    <Content Include="Content\image\wp_logo_260.png" />
+    <Content Include="Content\StyleMAT.css" />
+    <Content Include="Content\StyleNG.css" />
+    <Content Include="Content\StyleTabs.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\fusioncharts.charts.js" />
+    <Content Include="Scripts\fusioncharts.js" />
+    <Content Include="Scripts\fusioncharts.theme.fint.js" />
+    <Content Include="Scripts\fusioncharts.usa.js" />
+    <Content Include="Scripts\fusioncharts.world.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.9.0.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\jquery.ajaxhelper.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\json2.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\Support.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -134,6 +197,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\jquery-1.9.0.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\image\Thumbs.db" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

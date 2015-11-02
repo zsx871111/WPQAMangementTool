@@ -1,0 +1,22 @@
+﻿/* PaymentTrust_09.00.00 */
+
+.CustomTabStyle                     { background: url(../Images/bg_tabs.gif) repeat-x 0 0; padding-bottom: 10px; margin-bottom: 10px; }
+.CustomTabStyle .ajax__tab_header   { font-family: Calibri, Arial, Sans-serif; font-size: 1em; padding-bottom: 5px;}
+.CustomTabStyle .ajax__tab_inner    { margin: 0 4px 4px 0; font-size: 1em; cursor: pointer;}
+.CustomTabStyle .ajax__tab_tab span { display: block; margin: 0 4px 0 0; padding: 0; background: #d1d1d1; padding: 5px 10px; height: 20px; cursor: pointer; min-width: 140px;}
+.CustomTabStyle .ajax__tab_header a { color: #393939; }
+.CustomTabStyle .ajax__tab_active .ajax__tab_tab span { color: #fff; background: #f01e14; }
+.CustomTabStyle .ajax__tab_active   { background: Transparent url(../Images/arrow_nav.png) no-repeat center bottom; height: 40px; display: inline-block; }
+.CustomTabStyle .ajax__tab_panel    { padding: 0 10px; font-size: 1em; }
+
+.CustomValidatorCalloutStyle div, 
+.CustomValidatorCalloutStyle td     { border: solid 1px #ffb900; background-color: White; font-family: Calibri, Arial, Sans-Serif; font-size: 0.9em; }
+.CustomValidatorCalloutStyle td.wsvalidator_icon_cell, 
+.CustomValidatorCalloutStyle td.wsvalidator_error_message_cell, 
+.CustomValidatorCalloutStyle td.ajax__validatorcallout_error_message_cell { padding: 5px; }
+
+
+/* Hides second tab borders on search page */
+.results .ajax__tab_header {display:none;}
+.results .ajax__tab_xp .ajax__tab_body { border: none; padding: 0; font-size: 1em; font-family: Calibri, Arial, Sans-Serif;}
+   

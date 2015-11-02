@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head id="header">
+    <link href="@Url.Content("~/Content/StyleMAT.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/StyleNG.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/StyleTabs.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.9.0.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")" type="text/javascript"></script> 
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>   
+    <script src="@Url.Content("~/Scripts/jquery.ajaxhelper.js")" type="text/javascript"></script> 
+    <script src="@Url.Content("~/Scripts/fusioncharts.js")" type="text/javascript"></script> 
+    <script src="@Url.Content("~/Scripts/fusioncharts.charts.js")" type="text/javascript"></script>    
+    <script src="@Url.Content("~/Scripts/fusioncharts.theme.fint.js")" type="text/javascript"></script> 
+    <script src="@Url.Content("~/Scripts/fusioncharts.usa.js")" type="text/javascript"></script> 
+    <script src="@Url.Content("~/Scripts/fusioncharts.world.js")" type="text/javascript"></script> 
+    <script src="@Url.Content("~/Scripts/main.js")" type="text/javascript"></script> 
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+
+    <title></title>
+</head>
+<body id="body">
+
+    @System.Web.Optimization.Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", false)
+    <div id="container">
+        <div id="header">
+            <img src="@Url.Content("~/Content/image/wp_logo_136.png")" id="Img1">
+            <div class="merchantID">
+                LogInName:
+                @Html.Label("txt", (string)ViewBag.TestShixiao)
+            </div>
+            <div id="nav">
+                <div class="navLeft">
+                    <ul>
+                        <li>
+                            @*<a title="Validation information">Validation information</a>*@
+                            @Html.ActionLink("Validation information", "ValidationDefault", "Validation", null, null)
+                        </li>
+                        <li>
+                            @*<a title="Send transcations">Send transcations</a>*@
+                            @Html.ActionLink("Send transcations", "SendTranscationsDefault", "SendTrx", null, null)
+                        </li>
+                        <li>
+                            @*<a title="Send transcations">Send transcations</a>*@
+                            @Html.ActionLink("Check Result", "ResultDefault", "Result", null, null)
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        @RenderBody()
+        <div id="footer">
+            <div>
+                <img src="@Url.Content("~/Content/image/loxodrome.jpg")" id="Imgf1" alt="loxodrome">
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("beforeunload", function (e) {
+        var confirmationMessage = "Are you sure you want to leave this page without placing the order ?";
+        (e || window.event).returnValue = confirmationMessage;
+
+        return confirmationMessage;
+        }
+    );
+    </script>
+</body>
+
+
+
+</html>
+
